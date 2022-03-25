@@ -35,4 +35,56 @@ void main() {
   ddds2[61] = 'Brasília';
   print('NOVO MAPA: ${ddds2}');
   
+  // ALTERANDO O VALOR DE UMA CHAVE
+  ddds2[61] = 'Goiania';
+  print('NOVO MAPA: ${ddds2}');
+  
+  // REMOVENDO UM ITEM DO MAPA PELA CHAVE:
+  ddds2.remove(00);
+  print('NOVO MAPA: ${ddds2}');
+  
+  // LISTAR TODOS OS VALORES PRESENTES EM UM MAPA:
+  print('VALORES DO MAPA: ${ddds2.values}');
+  
+  // LISTAR AS CHAVES PRESENTES EM UM MAPA
+  print('CHAVES DO MAPA: ${ddds2.keys}');
+  
+  // VERIFICAR A EXISTENCIA DE UMA CHAVE E DE UM VALOR ESPECIFICO:
+  print('${ddds2.containsKey(50)}');
+  print('${ddds2.containsKey(11)}');
+  print('${ddds2.containsValue('São Paulo')}');
+  print('${ddds2.containsValue('SãoPaulo')}');
+  
+  // PERCORRENDO MAPA 1:
+  ddds2.forEach((k, v) {
+    print('key:$k|value:$v');
+  });
+  
+  // REMOVER TODOS OS ITENS:
+  ddds2.clear();
+  print('NOVO MAPA: ${ddds2}');
+  
+  // ADICIONANDO MULTIPLOS ITENS A LISTA:
+  ddds2.addAll({11: 'São Paulo',
+    19: 'Campinas',
+    41: 'Curitiba',
+    00: null
+  });
+  print('NOVO MAPA: ${ddds2}');
+  
+  // REMOVER ITENS ESPECIFICOS:
+  ddds2.removeWhere((k, v) => k > 20);
+  print('NOVO MAPA: ${ddds2}');
+  
+  // OPERADOR NULL ASSERTION:
+  // https://www.udemy.com/course/curso-completo-flutter-app-android-ios/learn/lecture/29252530#overview
+  // https://www.udemy.com/course/curso-completo-flutter-app-android-ios/learn/lecture/29252532#overview
+  
+  // NÃO CONFUNDA NULL COM VAZIO!!!!!!!!!!
+  
+  
+  
+  
+  
+  
 }
