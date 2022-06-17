@@ -17,6 +17,10 @@
 
 ### **Uso do APP:**
 
+Telas presentes no APP:
+
+![telas](https://github.com/RodrigoCh99/Bonaparte/tree/main/img/TELAS.png)
+
 
 
 
